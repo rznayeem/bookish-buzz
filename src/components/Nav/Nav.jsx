@@ -21,7 +21,7 @@ const Nav = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <nav className="navbar bg-base-100 work-font my-14">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,15 +47,20 @@ const Nav = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Book Vibe</a>
+        <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+        <ul className="space-x-8 text-[18px] menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-4">
+        <a className="btn px-7 py-[18px] h-auto bg-[#23BE0A] text-white font-semibold text-[18px]">
+          Sign In
+        </a>
+        <a className="btn px-7 py-[18px] h-auto bg-[#59C6D2] text-white font-semibold text-[18px]">
+          Sign Up
+        </a>
       </div>
-    </div>
+    </nav>
   );
 };
 
