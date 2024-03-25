@@ -1,0 +1,15 @@
+tbody tr th {
+  display: flex;
+  justify-content: start;
+  margin-right: 65px;
+  margin-bottom: 12px;
+  color: #131313b3;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+tbody tr td {
+  color: #131313;
+  font-size: 16px;
+  font-weight: 600;
+}
