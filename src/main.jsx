@@ -7,8 +7,8 @@ import Home from './Pages/Home/Home';
 import ListedBooks from './Pages/ListedBooks/ListedBooks';
 import PagesRead from './Pages/PagesRead/PagesRead';
 import Contact from './Pages/Contact/Contact';
-import Support from './Pages/Support/Support';
 import BookDetails from './components/BookDetails/BookDetails';
+import About from './Pages/About/About';
 
 const router = createBrowserRouter([
   {
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
       {
-        path: '/support',
-        element: <Support></Support>,
+        path: '/about',
+        element: <About></About>,
       },
     ],
   },

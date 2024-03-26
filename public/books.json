@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "bookName": "To Kill a Mockingbird",
+    "bookName": "Kill a Mockingbird",
     "author": "Harper Lee",
     "image": "https://i.ibb.co/25vhJdx/fdd0e218554fda4443af36899ee3aa12.png",
     "review": "A poignant portrayal of racial injustice and moral growth in the American South. Through the eyes of Scout Finch, Lee masterfully captures the innocence of childhood alongside the harsh realities of prejudice and discrimination, creating a narrative that resonates with readers of all ages. To Kill a Mockingbird is a timeless reminder of the importance of empathy, compassion, and standing up for what is right.",
@@ -40,7 +40,7 @@
   },
   {
     "id": 4,
-    "bookName": "The Catcher in the Rye",
+    "bookName": "Catcher in the Rye",
     "author": "J.D. Salinger",
     "image": "https://i.ibb.co/2SNftQM/9d64556d757ca419326dbb22159ff2ae.png",
     "review": "A coming-of-age novel that captures the disillusionment of youth and the search for authenticity. Salinger's iconic protagonist, Holden Caulfield, navigates the complexities of adolescence with wit and vulnerability, making this novel a timeless portrayal of teenage angst. The Catcher in the Rye is a poignant exploration of alienation, identity, and the struggle to find one's place in a world that often feels insincere.",
@@ -93,7 +93,7 @@
 
   {
     "id": 8,
-    "bookName": "The Da Vinci Code",
+    "bookName": "Da Vinci Code",
     "author": "Dan Brown",
     "image": "https://i.ibb.co/SJ216Jg/704abe9e421fa597d747e8b4e9bbcfb3.png",
     "review": "A gripping thriller that combines art, religion, and conspiracy in a fast-paced adventure. Brown's masterful blend of history and fiction keeps readers on the edge of their seats, unraveling mysteries that challenge the very foundations of belief. The Da Vinci Code is an exhilarating rollercoaster ride of secrets, codes, and hidden truths that will leave you questioning everything you thought you knew.",

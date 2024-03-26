@@ -7,7 +7,6 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from 'recharts';
-import PropTypes from 'prop-types';
 
 const PagesRead = () => {
   const readBooksData = JSON.parse(localStorage.getItem('books')) || [];
@@ -40,7 +39,7 @@ const PagesRead = () => {
 
   return (
     <div className="flex justify-center bg-[#13131308] rounded-2xl py-20">
-      <ResponsiveContainer width="80%" height={600}>
+      <ResponsiveContainer width="95%" height={600}>
         <BarChart
           data={readBooksData}
           margin={{

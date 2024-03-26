@@ -41,3 +41,25 @@ export const getWishlistStoredData = () => {
   const data = JSON.parse(localStorage.getItem('wishlist')) || [];
   return data;
 };
+
+export const compareBooksByRating = compare => {
+  const compareByRating = (a, b) => {
+    return a.rating - b.rating;
+  };
+
+  compare.sort(compareByRating);
+};
+export const compareBooksByPage = compare => {
+  const compareByPage = (a, b) => {
+    return a.totalPages - b.totalPages;
+  };
+
+  compare.sort(compareByPage);
+};
+export const compareBooksByYear = compare => {
+  const compareByYear = (a, b) => {
+    return a.publishing_year - b.publishing_year;
+  };
+
+  compare.sort(compareByYear);
+};
