@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import banner from '../../assets/banner.png';
 
 const Banner = () => {
@@ -7,9 +8,11 @@ const Banner = () => {
         <h1 className="playfair-font lg:text-[56px] text-[18px] font-bold">
           Books to freshen up <br className="lg:flex hidden" /> your bookshelf
         </h1>
-        <button className="btn mt-12 bg-[#23BE0A] px-7 py-5 h-auto font-bold text-xl text-white">
-          View The List
-        </button>
+        <Link to={'/listed'}>
+          <button className="btn mt-12 bg-[#23BE0A] px-7 py-5 h-auto font-bold text-xl text-white">
+            View The List
+          </button>
+        </Link>
       </div>
       <img className="h-[250px] lg:h-[400px]" src={banner} alt="" />
     </div>
