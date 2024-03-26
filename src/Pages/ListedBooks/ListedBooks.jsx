@@ -1,16 +1,22 @@
 import { useEffect, useState } from 'react';
 import ReadBooks from '../../components/ReadBooks/ReadBooks';
-import { getStoredData } from '../../utility/localStorage';
+import {
+  getStoredData,
+  getWishlistStoredData,
+} from '../../utility/localStorage';
 
 const ListedBooks = () => {
   const [readBooks, setReadBooks] = useState([]);
+  const [wishlistBooks, setWishlistBooks] = useState([]);
 
   useEffect(() => {
     const booksRead = getStoredData();
     setReadBooks(booksRead);
+    const wishlistBooksData = getWishlistStoredData();
+    setWishlistBooks(wishlistBooksData);
   }, []);
 
-  if (readBooks.length <= 0) {
+  if (readBooks.length <= 0 && wishlistBooks.length <= 0) {
     return (
       <div>
         <div className="text-center">
@@ -101,7 +107,12 @@ const ListedBooks = () => {
           role="tabpanel"
           className="tab-content bg-base-100 border-base-300 rounded-box p-6"
         >
-          Tab content 2
+          {wishlistBooks.map(wishlistBook => (
+            <ReadBooks
+              readBook={wishlistBook}
+              key={wishlistBook.id}
+            ></ReadBooks>
+          ))}
         </div>
       </div>
     </div>

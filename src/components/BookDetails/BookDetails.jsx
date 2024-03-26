@@ -1,7 +1,10 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import './BookDetails.css';
 import 'react-toastify/dist/ReactToastify.css';
-import { setDataToLocalStorage } from '../../utility/localStorage';
+import {
+  setDataToLocalStorage,
+  setWishlistDataToLocalStorage,
+} from '../../utility/localStorage';
 import { ToastContainer } from 'react-toastify';
 
 const BookDetails = () => {
@@ -25,6 +28,10 @@ const BookDetails = () => {
 
   const handleReadBooks = () => {
     setDataToLocalStorage(book);
+  };
+
+  const handleWishlistBooks = () => {
+    setWishlistDataToLocalStorage(book);
   };
 
   return (
@@ -81,7 +88,10 @@ const BookDetails = () => {
           >
             Read
           </button>
-          <button className="btn h-auto font-semibold text-xl px-7 text-white py-[18px] bg-[#50B1C9] rounded-lg">
+          <button
+            onClick={handleWishlistBooks}
+            className="btn h-auto font-semibold text-xl px-7 text-white py-[18px] bg-[#50B1C9] rounded-lg"
+          >
             Wishlist
           </button>
         </div>

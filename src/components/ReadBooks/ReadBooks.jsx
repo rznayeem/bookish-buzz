@@ -19,9 +19,9 @@ const ReadBooks = ({ readBook }) => {
   } = readBook;
 
   return (
-    <div className="card card-side bg-base-100 hover:shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] border work-font">
-      <figure className="w-[230px] bg-[#1313130D] rounded-2xl border m-6 py-7 px-12 flex justify-center items-center">
-        <img src={image} alt="Movie" />
+    <div className="card flex-col lg:flex-row card-side bg-base-100 hover:shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] border work-font">
+      <figure className="w-[230px] max-h-[230px] bg-[#1313130D] rounded-2xl border m-6 py-7 px-12 flex justify-center items-center">
+        <img className="h-full object-contain" src={image} alt="Movie" />
       </figure>
       <div className="card-body">
         <h2 className="card-title playfair-font">{bookName}</h2>
