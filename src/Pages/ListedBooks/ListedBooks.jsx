@@ -36,10 +36,14 @@ const ListedBooks = () => {
       setDisplayWishlistBooks(wishlistData);
     } else if (filter == 'PageNumber') {
       compareBooksByPage(data);
+      compareBooksByPage(wishlistData);
       setDisplayReadBooks(data);
+      setDisplayWishlistBooks(wishlistData);
     } else if (filter == 'year') {
       compareBooksByYear(data);
+      compareBooksByYear(wishlistData);
       setDisplayReadBooks(data);
+      setDisplayWishlistBooks(wishlistData);
     }
   };
 
@@ -60,7 +64,7 @@ const ListedBooks = () => {
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content -left-3/4 z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              className="dropdown-content -left-[75%] z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
                 <a>rating</a>
@@ -83,7 +87,7 @@ const ListedBooks = () => {
 
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center work-font">
         <div className="py-8 bg-[#1313130D] rounded-2xl mb-5">
           <h1 className="playfair-font font-bold text-4xl">Books</h1>
         </div>
@@ -91,20 +95,22 @@ const ListedBooks = () => {
           <div
             tabIndex={0}
             role="button"
-            className="btn bg-[#23BE0A] m-1 text-white "
+            className="btn bg-[#23BE0A] text-xl font-normal m-1 text-white "
           >
             Sort By <IoIosArrowDown />
           </div>
           <ul
             tabIndex={0}
-            className="dropdown-content content-center -left-3/4 z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+            className="dropdown-content text-[18px] content-center -left-1/4 z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li onClick={() => handleFilteredBooks('rating')}>
               <a>rating</a>
             </li>
+            <hr />
             <li onClick={() => handleFilteredBooks('PageNumber')}>
               <a>Number of Pages</a>
             </li>
+            <hr />
             <li onClick={() => handleFilteredBooks('year')}>
               <a>Published Year</a>
             </li>
@@ -117,9 +123,10 @@ const ListedBooks = () => {
           type="radio"
           name="my_tabs_2"
           role="tab"
-          className="tab"
+          className="tab text-xl font-medium -mb-[1px] border-b-transparent"
           aria-label="Read Books"
-          checked
+          defaultChecked
+          onChange={() => {}}
         />
         <div
           role="tabpanel"
@@ -134,12 +141,12 @@ const ListedBooks = () => {
           type="radio"
           name="my_tabs_2"
           role="tab"
-          className="tab"
+          className="tab text-xl font-medium -mb-[1px] border-b-transparent"
           aria-label="Wishlist Books"
         />
         <div
           role="tabpanel"
-          className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+          className="tab-content space-y-6 bg-base-100 border-base-300 rounded-box p-6"
         >
           {displayWishlistBooks.map(wishlistBook => (
             <ReadBooks

@@ -14,7 +14,7 @@ const Book = ({ book }) => {
         <img src={image} alt="Book Image" className="h-[166px]" />
       </figure>
       <div className="card-body space-y-4 items-start text-center">
-        <div className="flex flex-col lg:flex-row space-x-3 text-[#23BE0A] text-[16px] font-medium">
+        <div className="flex flex-col lg:flex-row gap-3 text-[#23BE0A] text-[16px] font-medium">
           {tags.map((tag, idx) => (
             <p className="bg-[#23BE0A0D] rounded-full px-4 py-2" key={idx}>
               {tag}

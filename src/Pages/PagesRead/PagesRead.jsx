@@ -12,7 +12,16 @@ import {
 const PagesRead = () => {
   const readBooksData = JSON.parse(localStorage.getItem('books')) || [];
 
-  const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
+  const colors = [
+    '#0088FE',
+    '#00C49F',
+    '#FFBB28',
+    '#FF8042',
+    'red',
+    'pink',
+    '#1F618D',
+    '#273746',
+  ];
 
   const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${
@@ -27,7 +36,6 @@ const PagesRead = () => {
 
   const TriangleBar = props => {
     const { fill, x, y, width, height } = props;
-    console.log(props);
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
 
