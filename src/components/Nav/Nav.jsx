@@ -40,7 +40,7 @@ const Nav = () => {
           className="btn text-[18px] font-normal bg-transparent border-none shadow-none hover:bg-transparent"
           to="/contact"
         >
-          Contact Us
+          Contact
         </NavLink>
       </li>
     </>
@@ -87,7 +87,7 @@ const Nav = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="space-x-8 text-[18px] menu-horizontal px-1">{links}</ul>
+        <ul className="space-x-2 text-[18px] menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end hidden lg:flex gap-4">
         <a className="btn px-7 py-[18px] h-auto hover:bg-[#1D8348] bg-[#23BE0A] text-white font-semibold text-[18px]">
