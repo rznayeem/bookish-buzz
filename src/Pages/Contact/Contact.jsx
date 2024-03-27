@@ -4,7 +4,10 @@ const Contact = () => {
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
           <h1 className="text-4xl font-bold">Get in touch</h1>
-          <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
+          <p className="pt-2 pb-4">
+            Share your thoughts with us. If you want to buy any books let us
+            know
+          </p>
           <div className="space-y-4">
             <p className="flex items-center">
               <svg
@@ -19,7 +22,7 @@ const Contact = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span>Fake address, 9999 City</span>
+              <span>Our address, 9999 Bangladesh</span>
             </p>
             <p className="flex items-center">
               <svg

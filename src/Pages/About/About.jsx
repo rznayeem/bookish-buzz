@@ -1,13 +1,13 @@
 const About = () => {
   return (
-    <div className="work-font space-y-6">
+    <div className="work-font space-y-6 m-5 lg:m-0">
       <div className="text-center space-y-6">
         <h1 className="playfair-font font-bold text-5xl">
-          Welcome to Book Vibe
+          Welcome to Bookish Buzz
         </h1>
         <hr />
         <p>
-          At book vibe, we are passionate about books and the transformative
+          At bookish Buzz, we are passionate about books and the transformative
           power of literature. <br /> Our platform is dedicated to providing
           book lovers with a space to discover, <br /> discuss, and celebrate
           their favorite reads.
@@ -57,10 +57,10 @@ const About = () => {
           <div>
             <p>
               Whether you're a lifelong bookworm or just starting your literary
-              journey, we invite you to explore all that book vibe has to offer.
-              Join us in our mission to celebrate the written word and spread
-              the joy of reading far and wide. Thank you for being a part of our
-              story!
+              journey, we invite you to explore all that Bookish Buzz has to
+              offer. Join us in our mission to celebrate the written word and
+              spread the joy of reading far and wide. Thank you for being a part
+              of our story!
             </p>
           </div>
         </div>
