@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
   BarChart,
   Bar,
@@ -10,6 +11,7 @@ import {
 
 const PagesRead = () => {
   const readBooksData = JSON.parse(localStorage.getItem('books')) || [];
+
   const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
   const getPath = (x, y, width, height) => {

@@ -45,6 +45,16 @@ const Nav = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             {links}
+            <li className="">
+              <a className="btn px-4 py-[12px] h-auto bg-[#23BE0A] text-white font-semibold text-[18px]">
+                Sign In
+              </a>
+            </li>
+            <li>
+              <a className="btn px-4 py-[12px] h-auto bg-[#59C6D2] text-white font-semibold text-[18px]">
+                Sign Up
+              </a>
+            </li>
           </ul>
         </div>
         <Link to={'/'} className="btn btn-ghost text-3xl font-bold">
@@ -54,7 +64,7 @@ const Nav = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="space-x-8 text-[18px] menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end gap-4">
+      <div className="navbar-end hidden lg:flex gap-4">
         <a className="btn px-7 py-[18px] h-auto bg-[#23BE0A] text-white font-semibold text-[18px]">
           Sign In
         </a>

@@ -14,6 +14,7 @@ const ListedBooks = () => {
   const [wishlistBooks, setWishlistBooks] = useState([]);
 
   const [displayReadBooks, setDisplayReadBooks] = useState([]);
+  const [displayWishlistBooks, setDisplayWishlistBooks] = useState([]);
 
   // console.log(displayReadBooks);
   useEffect(() => {
@@ -22,13 +23,17 @@ const ListedBooks = () => {
     setDisplayReadBooks(booksRead);
     const wishlistBooksData = getWishlistStoredData();
     setWishlistBooks(wishlistBooksData);
+    setDisplayWishlistBooks(wishlistBooksData);
   }, []);
 
   const handleFilteredBooks = filter => {
     const data = [...readBooks];
+    const wishlistData = [...wishlistBooks];
     if (filter == 'rating') {
       compareBooksByRating(data);
+      compareBooksByRating(wishlistData);
       setDisplayReadBooks(data);
+      setDisplayWishlistBooks(wishlistData);
     } else if (filter == 'PageNumber') {
       compareBooksByPage(data);
       setDisplayReadBooks(data);
@@ -136,7 +141,7 @@ const ListedBooks = () => {
           role="tabpanel"
           className="tab-content bg-base-100 border-base-300 rounded-box p-6"
         >
-          {wishlistBooks.map(wishlistBook => (
+          {displayWishlistBooks.map(wishlistBook => (
             <ReadBooks
               readBook={wishlistBook}
               key={wishlistBook.id}

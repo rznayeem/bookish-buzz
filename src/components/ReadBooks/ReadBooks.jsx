@@ -26,8 +26,8 @@ const ReadBooks = ({ readBook }) => {
       <div className="card-body">
         <h2 className="card-title playfair-font">{bookName}</h2>
         <p>By: {author}</p>
-        <div className="flex gap-5">
-          <div className="flex items-center gap-4 text-[#23BE0A]">
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 text-[#23BE0A]">
             <h5 className="text-black font-bold">Tag:</h5>
             {tags.map((tag, idx) => (
               <h5
@@ -43,7 +43,7 @@ const ReadBooks = ({ readBook }) => {
             <p>Year of Publishing: {publishing_year}</p>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           <div className="flex gap-2 items-center">
             <HiOutlineUsers className="text-2xl" />
             <p>Publisher: {publisher}</p>
@@ -54,16 +54,16 @@ const ReadBooks = ({ readBook }) => {
           </div>
         </div>
         <hr />
-        <div className="flex w-fit gap-4">
-          <p className="bg-[#328EFF26] w-fit text-[#328EFF] rounded-full px-5 py-3">
+        <div className="flex flex-col lg:flex-row w-fit gap-4">
+          <p className="bg-[#328EFF26] lg:w-fit text-[#328EFF] rounded-full px-5 py-3">
             Category: {category}
           </p>
-          <p className="bg-[#FFAC3326] w-fit text-[#FFAC33] rounded-full px-5 py-3">
+          <p className="bg-[#FFAC3326] lg:w-fit text-[#FFAC33] rounded-full px-5 py-3">
             Rating: {rating}
           </p>
 
           <Link to={`/book/${id}`}>
-            <button className="btn bg-[#23BE0A] text-white rounded-full text-[18px] font-medium">
+            <button className="btn bg-[#23BE0A] w-full text-white rounded-full text-[18px] font-medium">
               View Details
             </button>
           </Link>
