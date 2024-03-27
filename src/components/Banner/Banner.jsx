@@ -9,7 +9,7 @@ const Banner = () => {
           Books to freshen up <br className="lg:flex hidden" /> your bookshelf
         </h1>
         <Link to={'/listed'}>
-          <button className="btn mt-12 bg-[#23BE0A] px-7 py-5 h-auto font-bold text-xl text-white">
+          <button className="btn mt-12 bg-[#23BE0A] hover:bg-[#1D8348] px-7 py-5 h-auto font-bold text-xl text-white">
             View The List
           </button>
         </Link>

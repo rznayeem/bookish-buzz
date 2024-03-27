@@ -35,11 +35,11 @@ const BookDetails = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-12 work-font">
-      <div className="w-1/2 bg-[#1313130D] flex justify-center max-h-[710px] p-20 object-cover rounded-2xl">
+    <div className="flex flex-col lg:flex-row gap-12 work-font m-5 lg:m-0">
+      <div className="lg:w-1/2 bg-[#1313130D] flex justify-center max-h-[710px] p-6 lg:p-20 object-cover rounded-2xl">
         <img className=" h-full w-auto" src={image} alt="" />
       </div>
-      <div className="work-font w-1/2 space-y-6">
+      <div className="work-font lg:w-1/2 space-y-6">
         <h1 className="playfair-font text-[40px] font-bold">{bookName}</h1>
         <p className="text-xl font-medium text-[#131313CC]">By: {author}</p>
         <hr className="w-full" />
@@ -48,7 +48,7 @@ const BookDetails = () => {
         <p className="text-[#131313B3] leading-6">
           <span className="text-black font-bold">Review:</span> {review}
         </p>
-        <div className="flex flex-col lg:flex-row items-center gap-4 text-[#23BE0A]">
+        <div className="flex items-center gap-4 text-[#23BE0A]">
           <h5 className="text-black font-bold">Tag:</h5>
           {tags.map((tag, idx) => (
             <h5

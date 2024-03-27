@@ -130,7 +130,7 @@ const ListedBooks = () => {
         />
         <div
           role="tabpanel"
-          className="tab-content space-y-6 bg-base-100 border-base-300 rounded-box p-6"
+          className="tab-content space-y-6 bg-base-100 border-base-300 rounded-box p-6 pt-12"
         >
           {displayReadBooks.map(item => (
             <ReadBooks readBook={item} key={item.id}></ReadBooks>
@@ -146,7 +146,7 @@ const ListedBooks = () => {
         />
         <div
           role="tabpanel"
-          className="tab-content space-y-6 bg-base-100 border-base-300 rounded-box p-6"
+          className="tab-content space-y-6 bg-base-100 border-base-300 rounded-box p-6 pt-12"
         >
           {displayWishlistBooks.map(wishlistBook => (
             <ReadBooks
