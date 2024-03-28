@@ -14,8 +14,8 @@ const About = () => {
         </p>
       </div>
       <hr />
-      <div className="space-y-6">
-        <div>
+      <div className="lg:grid grid-cols-6 gap-6 space-y-6 lg:space-y-0">
+        <div className="col-span-3 border rounded-2xl p-6 bg-[#EAFAF1]">
           <h1 className="font-bold text-2xl">Our Mission</h1>
           <div>
             <p>
@@ -26,7 +26,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className=" border col-span-3 rounded-2xl p-6 bg-[#FDEDEC]">
           <h1 className="font-bold text-2xl">What We Offer</h1>
           <div>
             <li>
@@ -52,7 +52,7 @@ const About = () => {
             </li>
           </div>
         </div>
-        <div>
+        <div className="col-start-3 col-span-2 border rounded-2xl p-6 bg-[#EBF5FB]">
           <h1 className="font-bold text-2xl">Get Involved</h1>
           <div>
             <p>
